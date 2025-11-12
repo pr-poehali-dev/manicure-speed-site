@@ -17,23 +17,20 @@ const Index = () => {
   const courses = [
     {
       title: "Базовый курс",
-      duration: "4 недели",
       price: "15 000 ₽",
       features: ["1 фрезой, комби", "Без переключения реверса", "Формула 3 в 1", "Сертификат"],
       icon: "Sparkles"
     },
     {
       title: "Продвинутый уровень",
-      duration: "6 недель",
       price: "7 500 ₽",
       features: ["Гель тонко", "Прочное укрепление", "Профессиональная техника", "Практика онлайн"],
       icon: "Zap"
     },
     {
       title: "Мастер-класс",
-      duration: "2 недели",
       price: "11 000 ₽",
-      features: ["Скорость работы", "Формула 3 в 1", "Секреты профи", "Поддержка куратора"],
+      features: ["Скорость работы", "Формула 3 в 1", "Секреты профи"],
       icon: "Award"
     }
   ];
@@ -161,10 +158,6 @@ const Index = () => {
                     <Icon name={course.icon} size={28} className="text-white" />
                   </div>
                   <CardTitle className="text-2xl">{course.title}</CardTitle>
-                  <CardDescription className="text-lg">
-                    <Icon name="Clock" size={16} className="inline mr-1" />
-                    {course.duration}
-                  </CardDescription>
                 </CardHeader>
                 
                 <CardContent>
